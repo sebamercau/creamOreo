@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/creamOreo.iml" filepath="$PROJECT_DIR$/.idea/creamOreo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/creamOreo/creamOreo.iml" filepath="$PROJECT_DIR$/creamOreo/creamOreo.iml" />
     </modules>
   </component>
 </project>
