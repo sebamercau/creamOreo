@@ -1,8 +1,8 @@
 package com.smercau.creamOreo;
 
 import com.smercau.creamOreo.Entity.Twins.TwinsRegistroFaena;
+import com.smercau.creamOreo.Repository.TwinsCustom.TwinsRegistroFaenaCustomRepository;
 import com.smercau.creamOreo.Repository.Twins.TwinsRegistroFaenaRepository;
-import com.smercau.creamOreo.Service.TwinsRegistroFaenaCustomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -13,8 +13,11 @@ import java.util.List;
 @SpringBootApplication
 public class CreamOreoApplication implements CommandLineRunner {
 
+	/*@Autowired
+	private TwinsRegistroFaenaRepository twinsRegistroFaenaRepository;*/
+
 	@Autowired
-	private TwinsRegistroFaenaRepository twinsRegistroFaenaRepository;
+	private TwinsRegistroFaenaCustomRepository twinsRegistroFaenaCustomRepository;
 
 
 	public static void main(String[] args) {
@@ -24,7 +27,7 @@ public class CreamOreoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		List<TwinsRegistroFaena> registros = twinsRegistroFaenaRepository.findAll();
+		List<TwinsRegistroFaena> registros = twinsRegistroFaenaCustomRepository.buscarFecha("20240922");
 
 		registros.forEach(registro -> System.out.println(registro.toString()));
 	}

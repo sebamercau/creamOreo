@@ -1,7 +1,7 @@
 package com.smercau.creamOreo.Service;
 
 import com.smercau.creamOreo.Entity.Twins.TwinsRegistroFaena;
-import com.smercau.creamOreo.Repository.Twins.TwinsRegistroFaenaCustomRepository;
+import com.smercau.creamOreo.Repository.TwinsCustom.TwinsRegistroFaenaCustomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

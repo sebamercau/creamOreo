@@ -1,4 +1,4 @@
-package com.smercau.creamOreo.DbConfig;
+/*package com.smercau.creamOreo.DbConfig;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,11 +15,14 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(entityManagerFactoryRef = "twinsRegistroFaenaManagerFactory", transactionManagerRef = "twinsRegistroFaenaTransactionManager", basePackages = {
-        "com.smercau.creamOreo.Repository.Twins" })
+"com.smercau.creamOreo.Repository.Twins" })
 public class MySqlConfig {
 
     @Autowired
@@ -45,8 +48,11 @@ public class MySqlConfig {
         emf.setPackagesToScan("com.smercau.creamOreo.Entity.Twins");
         HibernateJpaVendorAdapter hjva = new HibernateJpaVendorAdapter();
         emf.setJpaVendorAdapter(hjva);
-        /*Map<String, Objects> propierties = new HashMap<>();
-        propierties.put("hibernate.dialect","");*/
+        Map<String, Object> propierties = new HashMap<>();
+        propierties.put("hibernate.show-sql",enviroment.getProperty("mysql.jpa.show-sql"));
+        propierties.put("hibernate.dialect",enviroment.getProperty("mysql.jpa.database-platform"));
+
+        emf.setJpaPropertyMap(propierties);
 
         return emf;
 
@@ -61,4 +67,4 @@ public class MySqlConfig {
         return jpaTransactionManager;
     }
 
-}
+}*/

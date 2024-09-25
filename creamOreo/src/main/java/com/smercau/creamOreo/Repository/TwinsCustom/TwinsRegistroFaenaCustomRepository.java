@@ -1,4 +1,4 @@
-package com.smercau.creamOreo.Repository.Twins;
+package com.smercau.creamOreo.Repository.TwinsCustom;
 
 import com.smercau.creamOreo.Entity.Twins.TwinsRegistroFaena;
 import jakarta.persistence.EntityManager;
@@ -15,7 +15,7 @@ public class TwinsRegistroFaenaCustomRepository  {
     private EntityManager entityManager;
 
     public List<TwinsRegistroFaena> buscarFecha(String fecha) {
-        String jpql = "SELECT u FROM TwinsRegistroFaena u WHERE u.fecha = :fecha";
+        String jpql = "SELECT u FROM FAENA u WHERE u.fecha = :fecha";
         TypedQuery<TwinsRegistroFaena> query = entityManager.createQuery(jpql, TwinsRegistroFaena.class);
         query.setParameter("fecha", fecha);
         return query.getResultList();
