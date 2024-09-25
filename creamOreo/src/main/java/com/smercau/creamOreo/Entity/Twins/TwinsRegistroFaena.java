@@ -1,4 +1,4 @@
-package com.smercau.creamOreo.Entity;
+package com.smercau.creamOreo.Entity.Twins;
 
 import jakarta.persistence.*;
 
@@ -60,5 +60,16 @@ public class TwinsRegistroFaena {
 
     public void setPesoFaena(double pesoFaena) {
         this.pesoFaena = pesoFaena;
+    }
+
+    @Override
+    public String toString() {
+        return "TwinsRegistroFaena{" +
+                "id=" + id +
+                ", codigoDeBarras=" + codigoDeBarras +
+                ", fechaFaena='" + fechaFaena + '\'' +
+                ", horaFaena='" + horaFaena + '\'' +
+                ", pesoFaena=" + pesoFaena +
+                '}';
     }
 }

@@ -2,8 +2,8 @@ package com.smercau.creamOreo.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.smercau.creamOreo.Repository.MediaResRepository;
-import com.smercau.creamOreo.Entity.MediaRes;
+import com.smercau.creamOreo.Repository.Oreo.MediaResRepository;
+import com.smercau.creamOreo.Entity.Oreo.MediaRes;
 
 import java.util.List;
 

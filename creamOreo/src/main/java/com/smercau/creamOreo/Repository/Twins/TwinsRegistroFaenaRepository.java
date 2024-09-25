@@ -1,6 +1,6 @@
-package com.smercau.creamOreo.Repository;
+package com.smercau.creamOreo.Repository.Twins;
 
-import com.smercau.creamOreo.Entity.TwinsRegistroFaena;
+import com.smercau.creamOreo.Entity.Twins.TwinsRegistroFaena;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

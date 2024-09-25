@@ -72,6 +72,11 @@
 			<artifactId>mssql-jdbc</artifactId>
 			<version>12.2.0.jre8</version> <!-- O usa la versión más reciente -->
 		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.33</version> <!-- Asegúrate de usar la versión adecuada -->
+		</dependency>
 	</dependencies>
 
 	<build>

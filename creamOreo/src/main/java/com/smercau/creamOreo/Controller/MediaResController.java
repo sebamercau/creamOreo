@@ -1,6 +1,6 @@
 package com.smercau.creamOreo.Controller;
 
-import com.smercau.creamOreo.Entity.MediaRes;
+import com.smercau.creamOreo.Entity.Oreo.MediaRes;
 import com.smercau.creamOreo.Service.MediaResService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
